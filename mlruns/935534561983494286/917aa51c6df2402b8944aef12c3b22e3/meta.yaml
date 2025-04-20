@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/935534561983494286/917aa51c6df2402b8944aef12c3b22e3/artifacts
+end_time: 1745180045860
+entry_point_name: ''
+experiment_id: '935534561983494286'
+lifecycle_stage: active
+run_id: 917aa51c6df2402b8944aef12c3b22e3
+run_name: LGBMClassifier
+run_uuid: 917aa51c6df2402b8944aef12c3b22e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745180030688
+status: 3
+tags: []
+user_id: vineet
