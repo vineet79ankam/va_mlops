@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/55f21ce4c48d4de8afda02cd31cac135/artifacts
+end_time: 1745179616112
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 55f21ce4c48d4de8afda02cd31cac135
+run_name: LGBMClassifier
+run_uuid: 55f21ce4c48d4de8afda02cd31cac135
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745179529909
+status: 3
+tags: []
+user_id: vineet

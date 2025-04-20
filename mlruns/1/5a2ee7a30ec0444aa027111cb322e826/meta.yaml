@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/5a2ee7a30ec0444aa027111cb322e826/artifacts
+end_time: 1745179648363
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 5a2ee7a30ec0444aa027111cb322e826
+run_name: ExtraTreesClassifier
+run_uuid: 5a2ee7a30ec0444aa027111cb322e826
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745179633392
+status: 3
+tags: []
+user_id: vineet
