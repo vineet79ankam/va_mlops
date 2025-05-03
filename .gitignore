@@ -1,0 +1,18 @@
+# Ignore everything in airflow except dags
+airflow/*
+!airflow/dags/
+
+# Ignore manifest folder from kubeflow
+manifest/
+
+# Ignore .zen and .dvc
+.zen/
+.dvc/
+
+# Ignore .terraform
+.terraform/
+
+# Ignore MLflow related files
+mlflow/
+
+minikube-linux-amd64
