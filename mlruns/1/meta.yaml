@@ -1,6 +1,0 @@
-artifact_location: ./mlruns/1
-creation_time: 1745173201922
-experiment_id: '1'
-last_update_time: 1745173201922
-lifecycle_stage: active
-name: Lead_scoring_model_experimentation
