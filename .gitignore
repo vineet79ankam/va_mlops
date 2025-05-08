@@ -6,13 +6,12 @@ airflow/*
 manifest/
 
 # Ignore .zen and .dvc
-.zen/
 .dvc/
 
 # Ignore .terraform
 .terraform/
 
 # Ignore MLflow related files
-mlflow/
+mlflow/*
 
 minikube-linux-amd64
