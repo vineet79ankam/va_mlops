@@ -1,6 +1,8 @@
 # Ignore everything in airflow except dags
 airflow/*
 !airflow/dags/
+airflow/dags/lead_scoring/__pycache__/
+airflow/dags/lead_scoring/lead_scoring_data_cleaning.db
 
 # Ignore manifest folder from kubeflow
 manifest/
@@ -12,6 +14,11 @@ manifest/
 .terraform/
 
 # Ignore MLflow related files
-mlflow/*
+mlruns/*
+mlartifacts/*
 
 minikube-linux-amd64
+
+lead_scoring/training_pipeline/notebooks/mlruns/*
+
+__pycache__
