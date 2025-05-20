@@ -12,6 +12,9 @@ manifest/
 .terraform/
 
 # Ignore MLflow related files
-mlflow/*
+mlruns/*
+mlartifacts/*
 
 minikube-linux-amd64
+
+lead_scoring/training_pipeline/notebooks/mlruns/*
