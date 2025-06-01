@@ -1,0 +1,6 @@
+outs:
+- md5: 9723893e5492dc0551036edcf596e284
+  size: 351238196
+  isexec: true
+  hash: md5
+  path: fraud_data_v02.csv
