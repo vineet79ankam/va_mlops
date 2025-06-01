@@ -1,0 +1,4 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = /mnt/d/ml_projects/va_mlops/dvc_store

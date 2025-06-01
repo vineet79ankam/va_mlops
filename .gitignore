@@ -8,7 +8,7 @@ airflow/dags/lead_scoring/lead_scoring_data_cleaning.db
 manifest/
 
 # Ignore .zen and .dvc
-.dvc/
+# .dvc/
 
 # Ignore .terraform
 .terraform/
