@@ -9,8 +9,9 @@ manifest/
 
 # Ignore .zen and .dvc
 # .dvc/
-dvc_store/*
-fraud_detection/data/*
+dvc_store/
+fraud_detection/data/fraud_data.csv
+fraud_detection/data/fraud_data_v02.csv
 
 # Ignore .terraform
 .terraform/
