@@ -9,6 +9,8 @@ manifest/
 
 # Ignore .zen and .dvc
 # .dvc/
+dvc_store/*
+fraud_detection/data/*
 
 # Ignore .terraform
 .terraform/
