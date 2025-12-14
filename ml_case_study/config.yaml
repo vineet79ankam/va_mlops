@@ -1,0 +1,20 @@
+app:
+  name: ctr-prediction-service
+  environment: production
+
+database:
+  path: /app/data/predictions.db
+  fetch_limit: 100
+
+model:
+  v2_path: models/xgboost_model_v2.pkl
+  v1_path: models/xgboost_model_v1.pkl
+  null_prediction: 0.5
+
+features:
+  expected_feature_count: 10
+
+monitoring:
+  psi:
+    window_size: 100
+    baseline_size: 50

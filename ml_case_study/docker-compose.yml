@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    container_name: ml-prediction-api
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data
+    environment:
+      - FLASK_ENV=production
+    command: gunicorn --workers 1 --threads 4 --bind 0.0.0.0:5000 app:app
+    networks:
+      - ml-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: ml-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - ml-net
+
+networks:
+  ml-net:
+    driver: bridge
