@@ -71,35 +71,18 @@ This allows multiple retailers to share the same platform securely and efficient
 - Drift alerts are logged when thresholds are exceeded
 
 
-## Project Structure
-├── app.py # Main inference service
-├── config.yaml # Config-driven parameters
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── models/
-│ ├── xgboost_model_v1.pkl
-│ └── xgboost_model_v2.pkl
-├── data/
-│ └── predictions.db
-├── monitoring/
-│ └── prometheus.yml
-└── train.py
-
-
 ## To run the Service Locally
 ### 1. Build & Start the API using docker-compose
-```bash```
+
 docker-compose up --build
 
 ### 2. Health Check
-```bash```
+
 docker-compose ps
 
 curl http://localhost:5000/health
 
 ### 3. Make a Prediction using sample data
-```bash```
 
 curl -X POST http://localhost:5000/api/v1/predict \
   -H "Content-Type: application/json" \
