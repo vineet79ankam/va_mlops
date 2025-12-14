@@ -12,6 +12,9 @@ manifest/
 dvc_store/
 fraud_detection/data/fraud_data.csv
 fraud_detection/data/fraud_data_v02.csv
+fraud_detection/data/fraud_data.csv.dvc
+fraud_detection/data/fraud_data_v02.csv.dvc
+fraud_detection/data/inference_data.csv
 
 # Ignore .terraform
 .terraform/

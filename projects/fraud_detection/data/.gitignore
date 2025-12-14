@@ -1,2 +1,5 @@
 /fraud_data.csv
 /fraud_data_v02.csv
+/fraud_data.csv.dvc
+/fraud_data_v02.csv.dvc
+/inference_data.csv
