@@ -24,8 +24,8 @@ It focuses on **model serving, multi-tenancy, monitoring, drift detection, and s
 ## Key Features
 Below are some of the key features of this model serving API
 - Real-time CTR prediction using REST API (Flask)
-- Multi-tenant inference using `tenant_id` with multiple users (user_id) per tenant for demonstration
-- Model versioning with fallback (v2 → v1 → NullModel) (Just for demonstration)
+- Multi-tenant inference using `tenant_id` with multiple users (`user_id`) per tenant for demonstration
+- Model versioning with fallback (`v2 → v1 → NullModel`) (Just for demonstration)
 - Low-latency inference using Flask + Gunicorn
 - Prometheus for metrics and model based monitoring (e.g.,Drift detection (PSI), Prediction monitoring, Latency, Prediction Rate, etc.)
 - Tenant-level drift detection using PSI as the drift detection metrics
@@ -35,13 +35,11 @@ Below are some of the key features of this model serving API
 
 ## High-Level Architecture (Serving Focus)
 **Event Flow (Conceptual):**
-
 1. Retailer applications generate user interaction events
 2. Features are computed upstream (assumed)
 3. Real-time API serves CTR predictions and saved into the SQLite DB
 4. Further, the predictions are logged for monitoring and analysis
 5. Drift and performance metrics are tracked per tenant
-
 
 ## Model Versioning & Fallback Strategy
 Note: The fallback stragey mentioned is only for the demonstration in actual it might vary based on the scenario and use case.
@@ -52,7 +50,6 @@ Easy rollback if the model fails to load during inference using model fallback s
 1. **Model v2** – latest preferred model
 2. **Model v1** – previous stable model
 3. **NullModel** – safe fallback returning a neutral prediction
-
 
 ## Multi-Tenancy Design
 Multi-tenancy is handled using a required `tenant_id` in every request. Moreover, it provides tenant isolation
